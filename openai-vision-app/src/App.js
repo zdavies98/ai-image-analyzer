@@ -78,10 +78,10 @@ const App = () => {
         </div>
         {!response && <p className="extra-info">
           <span>
-            <label htmlFor="files">Upload an image</label>
+            <label htmlFor="files" style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>Upload an image</label>
             <input onChange={uploadImage} id="files" accept="image/*" type="file" hidden />
           </span>
-          to ask questions about.
+          &nbsp;to ask questions about.
         </p>}
         <p>What do you want to know about the image?
           <button className="surprise" onClick={surprise} disabled={response}>Surprise Me</button>
